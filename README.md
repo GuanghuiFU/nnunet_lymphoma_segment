@@ -9,7 +9,7 @@ It contains:
 If you use this material, we would appreciate if you could cite the following reference.
 
 ## Citation
-* Guanghui Fu, Lucia Nichelli, Dario Herran, Romain Valabregue, Agusti Alentorn, Khê Hoang-Xuan, Caroline Houillier, Didier Dormont, Stéphane Lehéricy, Olivier Colliot. Automatic Segmentation of Primary Brain Lymphoma on Clinical Routine Post-contrast T1-weighted MRI. Preprint, https://hal.science/hal-04447318. 
+* Guanghui Fu, Lucia Nichelli, et al. Automatic Segmentation of Primary Brain Lymphoma on Clinical Routine Post-contrast T1-weighted MRI. Preprint, https://hal.science/hal-. 
   
 ## Trained nnU-net models
 ### Lymphoma segmentation in post-contrast T1-weighted MRI 
@@ -45,9 +45,7 @@ Inferencing nnU-Net only requires the following commands. `DATASET_ID`, `INPUT_F
 ```console
 nnUNetv2_predict -d DATASET_ID -i INPUT_FOLDER -o OUTPUT_FOLDER -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_fullres -p nnUNetPlans
 ```
-* **2D inference**:
-```console
-nnUNetv2_predict -d DATASET_ID -i INPUT_FOLDER -o OUTPUT_FOLDER -f  0 1 2 3 4 -tr nnUNetTrainer -c 2d -p nnUNetPlans
+
 ```
 ## Computation of metrics and statistical analysis
 

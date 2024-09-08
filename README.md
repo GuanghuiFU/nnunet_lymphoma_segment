@@ -33,7 +33,7 @@ Inferencing nnU-Net only requires the following commands. `DATASET_ID`, `INPUT_F
 nnUNetv2_predict -d DATASET_ID -i INPUT_FOLDER -o OUTPUT_FOLDER -f  0 1 2 3 4 -tr nnUNetTrainer -c 3d_fullres -p nnUNetPlans
 ```
 
-```
+
 ## Computation of metrics and statistical analysis
 
 * [`evaluation/eval_bootstrap_ci.py`](<https://github.com/GuanghuiFU/nnunet_lymphoma_segment/blob/main/evaluation/eval_boostrap_ci.py>): This code is for evaluation and calculate the 95% bootstrap confidence interval.

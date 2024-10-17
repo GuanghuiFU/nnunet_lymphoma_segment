@@ -6,14 +6,10 @@ This repository contains material associated to this [paper](#Citation).
 It contains:
 - link to trained models for segmentation of lymphoma from post-constrast T1-weighted MRI ([link](#Trained-nnU-net-models))
 
-If you use this material, we would appreciate if you could cite the following reference.
-
-## Citation
-* Guanghui Fu, Lucia Nichelli, et al. Automatic Segmentation of Primary Brain Lymphoma on Clinical Routine Post-contrast T1-weighted MRI. Preprint, https://hal.science/hal-. 
   
 ## Trained nnU-net models
 ### Lymphoma segmentation in post-contrast T1-weighted MRI 
-* [`preprocess/lymphoma_preprocess.py`](<https://github.com/GuanghuiFU/medical_cv_foundation_eval/blob/main/preprocess/lymphoma_preprocess.py>):
+* [`preprocess/lymphoma_preprocess.py`]:
   * Resample to (1,1,1)
   * Rescale intensity
   * CropOrPad, or Resize to (240, 240, 160)
@@ -36,8 +32,8 @@ nnUNetv2_predict -d DATASET_ID -i INPUT_FOLDER -o OUTPUT_FOLDER -f  0 1 2 3 4 -t
 
 ## Computation of metrics and statistical analysis
 
-* [`evaluation/eval_bootstrap_ci.py`](<https://github.com/GuanghuiFU/nnunet_lymphoma_segment/blob/main/evaluation/eval_boostrap_ci.py>): This code is for evaluation and calculate the 95% bootstrap confidence interval.
-* [`evaluation/t_test.py`](<https://github.com/GuanghuiFU/nnunet_lymphoma_segment/blob/main/evaluation/t_test.py>): This code is to perform paired T-test.
+* [`evaluation/eval_bootstrap_ci.py`]: This code is for evaluation and calculate the 95% bootstrap confidence interval.
+* [`evaluation/t_test.py`]: This code is to perform paired T-test.
 
 
 ## Related codes

@@ -1,10 +1,10 @@
-# Automatic Segmentation of Primary Brain Lymphoma on Clinical Routine Post-contrast T1-weighted MRI
+# Automatic Segmentation of Primary Central Nervous System Lymphoma on Clinical Routine Post-contrast T1-weighted MRI
 
 
 This repository contains material associated to this [paper](#Citation).
 
 It contains:
-- link to trained models for segmentation of lymphoma from post-constrast T1-weighted MRI ([link](#Trained-nnU-net-models))
+- link to trained models for segmentation of lymphoma from post-constrast T1-weighted MRI ([link](https://zenodo.org/records/15641957))
 
   
 ## Trained nnU-net models
@@ -14,7 +14,7 @@ It contains:
   * Rescale intensity
   * CropOrPad, or Resize to (240, 240, 160)
   * Note that, all these operations are performed through [TorchIO](<https://torchio.readthedocs.io/index.html>) operations
-* **Trained model link**: https://owncloud.icm-institute.org/index.php/s/4nERKuJb4xASV81
+* **Trained model link**: https://zenodo.org/records/15641957
 
 ## Code to train nnU-net
 
@@ -40,6 +40,9 @@ nnUNetv2_predict -d DATASET_ID -i INPUT_FOLDER -o OUTPUT_FOLDER -f  0 1 2 3 4 -t
 
 1. **nnU-Net** [1]: https://github.com/MIC-DKFZ/nnUNet
 2. **TorchIO** [2]: https://torchio.readthedocs.io/index.html
+
+## Citation
+
 
 ## References
 
